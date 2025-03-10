@@ -1,0 +1,51 @@
+/* Main header section */
+.title {
+    text-align: center;
+    background-color: #333;  
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 15px; /* Added this because the spacing looked off */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);  /* Makes it pop a bit */
+}
+
+/* Content sections - might need to adjust padding later */
+.skills, 
+.education, 
+.experience {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 15px;  /* Quick fix for mobile */
+}
+
+/* Links - borrowed this style from my last project */
+a { color: #0066cc; }  /* Better blue than default */
+a:visited { color: #663399; }  /* More modern purple */
+a:hover { 
+    color: #ff4444;  /* Changed to a nicer red */
+    text-decoration: none;  /* Clean look */
+}
+a:active { color: #00aa00; }
+
+/* Added this for the list items - they were looking weird */
+.experience ul {
+    display: inline-block;
+    text-align: left;
+    margin: 10px auto;
+}
+
+/* Media query for screens smaller than 575px */
+@media only screen and (max-width: 575px) {
+    .skills, 
+    .education, 
+    .experience {
+        float: none;  /* Stacks sections vertically */
+        width: 90%;  /* Expands width */
+        margin: 10px auto;  /* Centers sections */
+    }
+
+    /* Adjust navigation links container for better mobile fit */
+    .nav-links {
+        height: auto; /* Adjusts height dynamically */
+        padding: 10px 0;
+    }
+}
